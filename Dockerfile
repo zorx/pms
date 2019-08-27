@@ -66,7 +66,6 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 && composer --ansi --version --no-interaction
 
 # Installing node + yarn
-
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 
